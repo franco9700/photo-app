@@ -16,3 +16,9 @@
 //= require activestorage
 //= require turbolinks
 //= require_tree .
+
+	$(".cc_form").on('submit', submitHandler2);
+
+	submitHandler2 = function (event){
+		debugger;
+	}
