@@ -4,6 +4,7 @@ if Rails.env.production?
 			:provider => 'AWS',
 			:aws_access_key_id => Rails.application.credentials.amazon[:S3_ACCESS_KEY],
 			:aws_secret_access_key => Rails.application.credentials.amazon[:S3_SECRET_KEY],
+			:region => 'us-west-1',
 		}
 		config.fog_directory = Rails.application.credentials.amazon[:S3_BUCKET]
 	end
