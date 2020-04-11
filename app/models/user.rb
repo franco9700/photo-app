@@ -7,4 +7,8 @@ class User < ApplicationRecord
   has_one :payment
   accepts_nested_attributes_for :payment
   has_many :images
+
+  def remove_email_domain
+  	email.split("@")[0]
+  end
 end

@@ -1,0 +1,14 @@
+<h1 class="custom-font" align="center">Welcome again <%= current_user.remove_email_domain %>!</h1>
+<hr>
+
+<div class="row">
+	<div class="col-md-12">
+		<h2 align="center">Images uploaded: <%= current_user.images.count %></h2>
+	</div>
+</div>
+
+<div class="row">
+	<div class="col-md-4 col-md-offset-4">
+		<%= link_to "Upload photo", new_image_path, class: "btn btn-primary btn-lg btn-block" %>
+	</div>
+</div>

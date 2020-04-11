@@ -2,5 +2,6 @@ Rails.application.routes.draw do
   resources :images
   devise_for :users, :controllers => { :registrations => 'registrations'}
   root 'welcome#index'
+  get 'community_images', to: 'community#index'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

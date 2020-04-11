@@ -1,0 +1,31 @@
+<%- model_class = Image -%>
+<div class="page-header">
+  <h1 class="custom-font">Community images</h1>
+</div>
+<h3>Click the photo name to see it</h3>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th><%= model_class.human_attribute_name(:name) %></th>
+      <th><%= model_class.human_attribute_name(:picture) %></th>
+      <th>Artist contact</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @images.each do |image| %>
+      <tr>
+        <td><%= link_to image.name, image_path(image) %></td>
+        <td><%= image_tag image.picture.url, size: "100x100" %></td>
+        <td>
+          <%= image.user.email%>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<% if current_user %>
+  <%= link_to t('.new', :default => t("helpers.links.new")),
+              new_image_path,
+              :class => 'btn btn-primary' %>
+<% end %>

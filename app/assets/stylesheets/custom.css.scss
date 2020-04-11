@@ -1,26 +1,47 @@
+.custom-font{
+	font-family: 'Helvetica Neue' !important;
+	font-stretch: expanded;
+	text-shadow: -1px 0 #555, 0 1px #555, 1px 0 #555, 0 -1px #555;
+}
+
+.navbar{
+	border-radius: 0px !important; 
+}
+.table {
+	margin: auto;
+	width: 70% !important;
+	th{
+		text-align: center !important;
+	}
+	td{
+		text-align: center !important;
+	}
+}
+
+.navbar{
+	margin-bottom: 0px !important;
+}
+
 .user-name {
-	padding: 0 !important;
-	padding-left: 5px;
-	padding-top: 15px !important;
+	padding-top: 7px !important;
 	text-align: center;
+	border-radius: 10px !important; 
+	a {
+		padding: 5px!important;
+	}
 
-a {
-	color: black !important;
-	margin: 0 !important;
-	padding: 5px!important;
-}
-
-a:hover, a:focus {
-	color: #000 !important;
-}
+	a:hover, a:focus {
+		color: #000 !important;
+	}
 }
 
 .logout {
 	padding-left: 0;
+	padding-bottom: 7px !important;
 }
 
 .nav.navbar-right {
-	padding-bottom: 10px;
+
 	padding-top: 5px;
 }
 
@@ -29,43 +50,42 @@ a:hover, a:focus {
 		border-radius: 5px;
 		color: #fff;
 		margin-top: 15px;
-		padding: 8px;
 
-}
+	}
 
-.navbar-link:focus, .navbar-link:hover {
+	.navbar-link:focus, .navbar-link:hover {
 
-background: #3071a9;
+		background: #3071a9;
 
-color: #fff;
+		color: #fff;
 
-}
+	}
 
-li a {
+	li a {
 
-margin-right: 5px;
+		
 
-}
+	}
 
 }
 
 .nav.navbar-right li {
 
-.btn {
+	.btn {
 
-color: #fff !important;
+	color: #fff !important;
 
-margin-top: 5%;
+	margin-top: 5%;
 
 }
 
-.btn-danger:hover, .btn-danger:focus {
-background-color: darken(#d9534f,20%) !important;
-}
+	.btn-danger:hover, .btn-danger:focus {
+		background-color: darken(#d9534f,20%) !important;
+	}
 
-.btn-primary:hover, .btn-primary:focus {
-	background-color: darken(#428bca,20%) !important;
-}
+	.btn-primary:hover, .btn-primary:focus {
+		background-color: darken(#428bca,20%) !important;
+	}
 
 }
 
@@ -80,19 +100,43 @@ background-color: darken(#d9534f,20%) !important;
   }
 }
 
-.jumbotron {
+.jumbotron-welcome {
   text-align: center;
-  background-image: asset-url('jumbotron.jpg');
-  background-size: cover;
+  background-image: asset-url('jumbotron-2.jpg');
+  background-size: auto;
+  height: 200px;
   color: #fff;
   font-family: 'Helvetica Neue' !important;
   font-stretch: expanded;
   padding-top: 25px;
   padding-bottom: 25px;
+  margin-top: 15px;
   margin-left: 15px;
   margin-right: 15px;
   text-shadow: -1px 0 #555, 0 1px #555, 1px 0 #555, 0 -1px #555;
 
+}
+
+.jumbotron-fotografo{
+	margin-top: 20px;
+	background-image: asset-url('fotografo.jpg') !important;
+	background-size: auto;
+	height: 400px;
+	color: #fff;
+	font-family: 'Helvetica Neue' !important;
+	font-stretch: expanded;
+	text-shadow: -1px 0 #555, 0 1px #555, 1px 0 #555, 0 -1px #555;
+}
+
+.jumbotron-camara{
+	margin-top: 20px;
+	background-image: asset-url('camara.jpg') !important;
+	background-size: auto;
+	height: 400px;
+	color: #fff;
+	font-family: 'Helvetica Neue' !important;
+	font-stretch: expanded;
+	text-shadow: -1px 0 #555, 0 1px #555, 1px 0 #555, 0 -1px #555;
 }
 
 .no-left-padding {
